@@ -2,6 +2,13 @@
   "name": "parent-root",
   "version": "0.1.0",
   "description": "Find the root of the top-level parent in the module tree",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/myndzi/node-parent-root"
+  },
+  "bugs": {
+    "url": "http://github.com/myndzi/node-parent-root/issues"
+  },
   "main": "index.js",
   "scripts": {
     "test": "mocha -u bdd -R spec"
