@@ -40,6 +40,16 @@ describe('parentRoot', function () {
         });
         parentRoot().should.equal('/keke/lar');
     });
+    it('should succeed with deep nesting (>1 parent)', function () {
+        parentRoot.mockModule({
+            parent: {
+                parent: {
+                    filename: '/home/foo/module/baz.js'
+                }
+            }
+        });
+        parentRoot().should.equal('/home/foo/module');
+    });
     it('should succeed with no parent modules', function () {
         parentRoot.mockModule({
             filename: '/home/foo/module/node_modules/parent-root/index.js'

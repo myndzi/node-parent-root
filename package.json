@@ -1,6 +1,6 @@
 {
   "name": "parent-root",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Find the root of the top-level parent in the module tree",
   "repository": {
     "type": "git",

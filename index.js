@@ -6,9 +6,14 @@ var _module = module,
     _fs = require('fs');
 
 function parentRoot() {
-    var mod = _module;
+    var mod = _module, cycle = [ mod ];
     while (mod.parent) {
-        mod = _module.parent;
+        if (cycle.indexOf(mod.parent) > -1) {
+            break;
+        }
+        cycle.push(mod.parent);
+        
+        mod = mod.parent;
     }
     
     var top = PATH.dirname(mod.filename), prev = '';
