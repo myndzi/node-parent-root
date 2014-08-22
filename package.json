@@ -1,0 +1,15 @@
+{
+  "name": "parent-root",
+  "version": "0.1.0",
+  "description": "Find the root of the top-level parent in the module tree",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -u bdd -R spec"
+  },
+  "author": "Kris Reeves",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^1.21.4",
+    "should": "^4.0.4"
+  }
+}
